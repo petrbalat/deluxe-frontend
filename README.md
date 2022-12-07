@@ -18,3 +18,15 @@
 ### Pageable 
 hasNext and hasPrevious
 [limitLength](deluxe_frontend/utils/spring/pageable.ts?doc=)
+
+
+## DEPLOY
+1. check 
+```
+deno check utils/**/*.ts
+```
+2. tests
+```
+deno test tests/**/**
+```
+3. push with git tag
