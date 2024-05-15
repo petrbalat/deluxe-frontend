@@ -1,6 +1,7 @@
 {
   "name": "@softdeluxe/utils",
   "version": "0.9.0",
+  "exports": "./mod.ts",
   "tasks": {
   },
   "imports": {

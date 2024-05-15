@@ -1,4 +1,7 @@
-export const czkCurrencyFormat = new Intl.NumberFormat("cs-CZ", {
+/**
+ *
+ */
+export const czkCurrencyFormat: Intl.NumberFormat = new Intl.NumberFormat("cs-CZ", {
   style: "currency",
   currency: "CZK",
   maximumFractionDigits: 0,
