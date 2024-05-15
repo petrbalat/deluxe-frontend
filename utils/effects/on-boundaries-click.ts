@@ -3,10 +3,13 @@
  * @param target
  * @param onClick
  */
-export const onBoundariesClick = (target: any | null, onClick: (within: boolean) => void): { unsubscribe: () => void } | null => {
-  if (!target || typeof document === 'undefined') return null;
+export const onBoundariesClick = (
+  target: any | null,
+  onClick: (within: boolean) => void,
+): { unsubscribe: () => void } | null => {
+  if (!target || typeof document === "undefined") return null;
   const listener = (event: Event) => {
-    const withinBoundaries = event.composedPath().includes(target)
+    const withinBoundaries = event.composedPath().includes(target);
 
     if (withinBoundaries) {
       onClick(true);
@@ -15,7 +18,7 @@ export const onBoundariesClick = (target: any | null, onClick: (within: boolean)
     }
   };
 
-  document.addEventListener('click', listener)
-  const unsubscribe = () => document.removeEventListener('click', listener);
-  return {unsubscribe};
-}
+  document.addEventListener("click", listener);
+  const unsubscribe = () => document.removeEventListener("click", listener);
+  return { unsubscribe };
+};

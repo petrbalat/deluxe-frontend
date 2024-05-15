@@ -1,7 +1,11 @@
 /**
  * zkrátí text a doplní ...
  */
-export function limitLength(str: string | null | undefined, limit: number, addText: string = '...'): string | null {
+export function limitLength(
+  str: string | null | undefined,
+  limit: number,
+  addText: string = "...",
+): string | null {
   if (!str) return null;
 
   if (limit >= str.length) {
