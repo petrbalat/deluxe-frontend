@@ -12,8 +12,8 @@ import {
   switchMap,
   tap,
   throwError,
-} from "https://deno.land/x/rxjs@v1.0.2/mod.ts";
-import { fromFetch } from "https://deno.land/x/rxjs@v1.0.2/fetch/index.ts";
+} from "npm:rxjs@8.0.0-alpha.14";
+import { fromFetch } from "npm:rxjs@8.0.0-alpha.14/fetch";
 
 /**
  * našeptávač s rjxs

@@ -3,6 +3,8 @@
   "version": "0.9.0",
   "exports": "./mod.ts",
   "tasks": {
+    "check": "deno check **/*.ts && deno check **/*.tsx",
+    "check-full": "deno fmt --check && deno lint && deno check **/*.ts && deno check **/*.tsx"
   },
   "imports": {
     "$deno/": "https://deno.land/std@0.165.0/",
