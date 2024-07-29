@@ -1,5 +1,4 @@
 import { assertEquals } from "$deno/testing/asserts.ts";
-import { limitLength } from "../../utils/strings.ts";
 import { filterIsNotNill } from "../../utils/array.ts";
 
 Deno.test(function filterIsNotNillTest() {

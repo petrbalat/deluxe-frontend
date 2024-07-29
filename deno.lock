@@ -253,6 +253,9 @@
     "https://deno.land/x/rxjs@v1.0.2/internal/util/throwUnobservableError.ts": "928122fd08f0a521773be5bb86a2e7d39b22ea493eaa8babdc97f20efda753b2",
     "https://deno.land/x/rxjs@v1.0.2/mod.ts": "0eee8607f14f3f79b19579187b600b6602c69bd9a67183e9c132e91e5ec1846b",
     "https://deno.land/x/rxjs@v1.0.2/operators/index.ts": "b3fb370836cadae2541b8e5e226d06199aec99a5ae68d241364f424c1317e704",
-    "https://deno.land/x/rxjs@v1.0.2/testing/index.ts": "ad2e6acaf13e4b11ece1bc73267e6320b34708a0854fb2e722375e10f1673b4b"
+    "https://deno.land/x/rxjs@v1.0.2/testing/index.ts": "ad2e6acaf13e4b11ece1bc73267e6320b34708a0854fb2e722375e10f1673b4b",
+    "https://esm.sh/preact@10.11.0/jsx-runtime": "85de45eaae62e9ced985376838db9b4f2f0ba94e008a9575afa131d03e247c0c",
+    "https://esm.sh/stable/preact@10.11.0/denonext/jsx-runtime.js": "03c711c4a0eaf1489d807db5611a94f4e34e9c25763c0da060014964ff95c80b",
+    "https://esm.sh/stable/preact@10.11.0/denonext/preact.mjs": "71306b68971e656b4c8bff31e261528c4fe14bf87f8e65f214b671f45bef2d31"
   }
 }

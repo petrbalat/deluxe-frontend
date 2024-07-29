@@ -37,4 +37,8 @@ deno check utils/**/*.ts
 deno test tests/**/**
 ```
 
-3. push with git tag
+4.
+
+```
+deno publish
+```
