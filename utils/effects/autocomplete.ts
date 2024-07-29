@@ -12,8 +12,8 @@ import {
   switchMap,
   tap,
   throwError,
-} from "npm:rxjs@8.0.0-alpha.14";
-import { fromFetch } from "npm:rxjs@8.0.0-alpha.14/fetch";
+} from "rxjs";
+import { fromFetch } from "rxjs-fetch";
 
 /**
  * našeptávač s rjxs
