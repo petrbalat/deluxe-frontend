@@ -6,14 +6,13 @@ import {
   fromEvent,
   map,
   merge,
-  Observable,
   of,
   Subscription,
   switchMap,
   tap,
   throwError,
 } from "rxjs";
-import { fromFetch } from "rxjs-fetch";
+import { fromFetch } from "rxjs/fetch";
 
 /**
  * našeptávač s rjxs
@@ -27,7 +26,7 @@ export function autocomplete({
   onLoading,
   minLength,
 }: AutocompleteType): Subscription {
-  const searchText: Observable<any> = fromEvent(target, "keyup").pipe(
+  const searchText = fromEvent(target, "keyup").pipe(
     map((it: any | Event) => it.target?.value ?? ""),
   );
 

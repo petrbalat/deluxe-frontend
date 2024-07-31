@@ -1,24 +1,14 @@
 {
   "name": "@softdeluxe/deluxe-frontend",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "exports": "./mod.ts",
   "tasks": {
-    "check": "deno check **/*.ts",
+    "check": "deno check mod.ts && deno test -A --no-check tests/**",
     "check-full": "deno fmt --check && deno lint && deno check **/*.ts && deno check **/*.tsx",
     "publish": "deno task check && deno publish"
   },
   "imports": {
-    "$deno/": "https://deno.land/std@0.165.0/",
-    "$fresh/": "https://deno.land/x/fresh@1.1.2/",
-    "preact": "https://esm.sh/preact@10.11.0",
-    "preact/": "https://esm.sh/preact@10.11.0/",
-    "preact-render-to-string": "https://esm.sh/*preact-render-to-string@5.2.4",
-    "@preact/signals": "https://esm.sh/*@preact/signals@1.0.3",
-    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.0.1",
-    "twind": "https://esm.sh/twind@0.16.17",
-    "twind/": "https://esm.sh/twind@0.16.17/",
-    "rxjs": "npm:rxjs@8.0.0-alpha.14",
-    "rxjs-fetch": "npm:rxjs@8.0.0-alpha.14/fetch"
+    "rxjs": "npm:rxjs@8.0.0-alpha.14"
   },
   "compilerOptions": {
     "jsx": "react-jsx",

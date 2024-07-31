@@ -11,15 +11,7 @@
       }
     }
   },
-  "remote": {
-    "https://deno.land/std@0.165.0/fmt/colors.ts": "9e36a716611dcd2e4865adea9c4bec916b5c60caad4cdcdc630d4974e6bb8bd4",
-    "https://deno.land/std@0.165.0/testing/_diff.ts": "a23e7fc2b4d8daa3e158fa06856bedf5334ce2a2831e8bf9e509717f455adb2c",
-    "https://deno.land/std@0.165.0/testing/_format.ts": "cd11136e1797791045e639e9f0f4640d5b4166148796cad37e6ef75f7d7f3832",
-    "https://deno.land/std@0.165.0/testing/asserts.ts": "1e340c589853e82e0807629ba31a43c84ebdcdeca910c4a9705715dfdb0f5ce8",
-    "https://esm.sh/preact@10.11.0/jsx-runtime": "85de45eaae62e9ced985376838db9b4f2f0ba94e008a9575afa131d03e247c0c",
-    "https://esm.sh/stable/preact@10.11.0/denonext/jsx-runtime.js": "03c711c4a0eaf1489d807db5611a94f4e34e9c25763c0da060014964ff95c80b",
-    "https://esm.sh/stable/preact@10.11.0/denonext/preact.mjs": "71306b68971e656b4c8bff31e261528c4fe14bf87f8e65f214b671f45bef2d31"
-  },
+  "remote": {},
   "workspace": {
     "dependencies": [
       "npm:rxjs@8.0.0-alpha.14"
