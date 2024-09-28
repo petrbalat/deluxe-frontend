@@ -1,10 +1,11 @@
 {
   "name": "@softdeluxe/deluxe-frontend",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "exports": "./mod.ts",
   "tasks": {
     "check": "deno check mod.ts && deno test -A --no-check tests/**",
     "check-full": "deno fmt --check && deno lint && deno check **/*.ts && deno check **/*.tsx",
+    "test": "deno test -A tests/**/*.ts",
     "publish": "deno task check && deno publish"
   },
   "imports": {
