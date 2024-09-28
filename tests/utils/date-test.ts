@@ -1,4 +1,4 @@
-import { assertEquals } from "$deno/testing/asserts.ts";
+import {assertEquals} from "@std/assert";
 import { dateWithoutTimezone, parseDate } from "../../utils/date.ts";
 
 Deno.test(function parseDateTest() {

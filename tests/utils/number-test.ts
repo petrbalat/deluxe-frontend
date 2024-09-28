@@ -1,4 +1,4 @@
-import { assertEquals } from "$deno/testing/asserts.ts";
+import {assertEquals} from "@std/assert";
 import { czkCurrencyFormat } from "../../utils/numbers.ts";
 
 Deno.test(function czkCurrencyFormatTest() {

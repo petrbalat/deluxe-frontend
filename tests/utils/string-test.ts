@@ -1,4 +1,4 @@
-import { assertEquals } from "$deno/testing/asserts.ts";
+import {assertEquals} from "@std/assert";
 import {limitLength, substringAfterLast} from "../../utils/strings.ts";
 
 Deno.test(function limitLengthTest() {
