@@ -14,6 +14,6 @@ Deno.test(function substringAfterLastTest() {
 
 Deno.test(function substringBeforeTest() {
   assertEquals(substringBefore("test 123", " "), "test");
-  assertEquals(substringBefore("test 123 654", "654"), "test 123");
+  assertEquals(substringBefore("test 123 654", "654"), "test 123 ");
   assertEquals(substringBefore("test 123 654", "xxx"), null);
 });

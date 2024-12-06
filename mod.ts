@@ -6,3 +6,4 @@ export * from "./utils/array.ts";
 export * from "./utils/date.ts";
 export * from "./utils/numbers.ts";
 export * from "./utils/strings.ts";
+export * from "./utils/files.ts";

@@ -23,7 +23,7 @@ export function substringAfterLast(
   str: string,
   search: string,
   fromIndex?: number,
-):string  {
+): string {
   const idx: number = str.lastIndexOf(search, fromIndex);
   if (idx === -1) {
     return "";
@@ -31,7 +31,7 @@ export function substringAfterLast(
   return str.substring(idx + search.length);
 }
 
-export function substringBefore(str: string, find: string) {
+export function substringBefore(str: string, find: string): string | null {
   const index = str.indexOf(find);
   return index === -1 ? null : str.substring(0, index);
 }
