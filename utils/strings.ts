@@ -30,3 +30,8 @@ export function substringAfterLast(
   }
   return str.substring(idx + search.length);
 }
+
+export function substringBefore(str: string, find: string) {
+  const index = str.indexOf(find);
+  return index === -1 ? null : str.substring(0, index);
+}
