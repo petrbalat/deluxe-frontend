@@ -1,3 +1,4 @@
+import { substringBefore } from "./strings.ts";
 
 export async function* listFiles(directory: string, filter?: {
   endsWith?: string;
@@ -7,7 +8,13 @@ export async function* listFiles(directory: string, filter?: {
       continue;
     }
 
-    const entry: FileEntry = { ...it, ...{ fullPath: `${directory}/${it.name}` } };
+    const entry: FileEntry = {
+      ...it,
+      ...{
+        fullPath: `${directory}/${it.name}`,
+        nameWithoutExtension: substringBefore(it.name, ".") ?? it.name,
+      },
+    };
     if (!filter) {
       yield entry;
       continue;
@@ -21,4 +28,5 @@ export async function* listFiles(directory: string, filter?: {
 
 export type FileEntry = Deno.DirEntry & {
   fullPath: string;
+  nameWithoutExtension: string;
 };
